@@ -1,7 +1,7 @@
 FROM node:slim
 MAINTAINER xNie <cool_lyc100@163.com>
 COPY /hexo /hexo
-RUN cd hexo
+RUN cd /hexo
 RUN echo "show files"
 RUN ls
 RUN npm install hexo-cli -g
