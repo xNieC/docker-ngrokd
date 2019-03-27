@@ -1,9 +1,12 @@
 FROM node:slim
 MAINTAINER xNie <cool_lyc100@163.com>
-COPY hexo ./
+COPY /home/jenkins/workspace/BlogCI/hexo /hexo
+RUN cd hexo
+RUN echo "show files"
+RUN ls
 RUN npm install hexo-cli -g
 RUN npm install
 RUN hexo g
-RUN echo "生成完毕,浏览目标文件"
+RUN echo "show files"
 RUN ls
 EXPOSE 4000
