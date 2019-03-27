@@ -5,7 +5,7 @@ RUN npm install hexo-cli -g
 RUN /bin/sh -c 'cd /hexo && npm install'
 RUN echo "show files"
 RUN /bin/sh -c 'cd /hexo && ls'
-RUN hexo g
+RUN /bin/sh -c 'cd /hexo && hexo g'
 RUN echo "show files"
 RUN /bin/sh -c 'cd /hexo && ls'
 EXPOSE 4000
