@@ -1,4 +1,5 @@
-FROM node:slim
+FROM ubuntu
+FROM node
 MAINTAINER xNie <cool_lyc100@163.com>
 #COPY /hexo /hexo
 RUN npm install hexo-cli -g
