@@ -1,6 +1,6 @@
 FROM node:slim
 MAINTAINER xNie <cool_lyc100@163.com>
-COPY /home/jenkins/workspace/BlogCI/hexo /hexo
+COPY /hexo /hexo
 RUN cd hexo
 RUN echo "show files"
 RUN ls
